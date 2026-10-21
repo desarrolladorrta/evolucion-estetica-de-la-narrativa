@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153c43">
+  <meta name="description" content="Explora cómo el Clasicismo, el Romanticismo, el Realismo y las Vanguardias transforman una misma historia. Un recurso interactivo de Introducción a la literatura.">
+  <title>La evolución estética de la narrativa · CECAR</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a href="#inicio" class="brand" aria-label="CECAR, ir al inicio"><img src="assets/logo-cecar.png" alt="CECAR" width="574" height="182"></a>
+    <span class="course">Introducción a la literatura</span>
+    <button class="glossary-button" data-dialog="glosario"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7a4 4 0 0 1 4 4v12a5 5 0 0 0-4-2H4zm16 0h-3M18 8h3m-3 4h3"/></svg>Glosario</button>
+  </header>
+  <nav class="main-nav" aria-label="Recorrido de aprendizaje">
+    <div class="nav-links"><a href="#inicio" data-route="inicio">Inicio</a><a href="#fundamentos" data-route="fundamentos">Fundamentos</a><a href="#mapa" data-route="mapa">Mapa de movimientos</a><a href="#sintesis" data-route="sintesis">Síntesis</a><a href="#recursos" data-route="recursos">Recursos</a></div>
+    <div class="progress-wrap"><span id="progress-label">Tu recorrido · 0 de 5</span><progress id="progress" max="5" value="0" aria-labelledby="progress-label"></progress></div>
+  </nav>
+  <main id="contenido" tabindex="-1"></main>
+  <footer><img src="assets/logo-cecar.png" alt="CECAR" width="574" height="182"><p>La literatura cambia de forma.<br>Tu manera de leer, también.</p><button data-dialog="creditos">Fuentes y créditos</button><span>Recurso educativo digital</span></footer>
+  <dialog id="modal" aria-labelledby="dialog-title"><div class="dialog-head"><h2 id="dialog-title"></h2><button id="close-dialog" aria-label="Cerrar ventana"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div><div id="dialog-content"></div></dialog>
+  <noscript><p class="noscript">Activa JavaScript para explorar el mapa y las actividades. El contenido de referencia está disponible en <a href="docs/info.md">el documento fuente</a>.</p></noscript>
+</body>
+</html>
